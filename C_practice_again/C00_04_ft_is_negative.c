@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   C00_03_ft_print_numbers.c                          :+:    :+:            */
+/*   C00_04_ft_is_negative.c                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ahossein <ahossein@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2026/08/11 23:35:30 by ahossein      #+#    #+#                 */
-/*   Updated: 2026/08/11 23:40:08 by ahossein      ########   odam.nl         */
+/*   Created: 2026/08/11 23:41:12 by ahossein      #+#    #+#                 */
+/*   Updated: 2026/08/11 23:44:54 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include <unistd.h>
 
-void ft_print_numbers(void)
+void ft_is_negative(int n)
 {
-	// int i = '0';
-	// while (i <= '9')
-	//or
-	int i = 48;
-	while (i <= 57)
-	{
-		write(1, &i, 1);
-		i++;
-	}
+	if (n < 0)
+		write(1, "N", 1);
+	else
+		write(1, "P",1);	
 }
 
 int main(void)
 {
-	ft_print_numbers();
+	int number = 0;
+	ft_is_negative(number);
 	return (0);
 }

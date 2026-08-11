@@ -1,32 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   C00_03_ft_print_numbers.c                          :+:    :+:            */
+/*   C00_05_ft_print_comb.c                             :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ahossein <ahossein@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2026/08/11 23:35:30 by ahossein      #+#    #+#                 */
-/*   Updated: 2026/08/11 23:40:08 by ahossein      ########   odam.nl         */
+/*   Created: 2026/08/11 23:48:36 by ahossein      #+#    #+#                 */
+/*   Updated: 2026/08/11 23:48:37 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_print_numbers(void)
-{
-	// int i = '0';
-	// while (i <= '9')
-	//or
-	int i = 48;
-	while (i <= 57)
-	{
-		write(1, &i, 1);
-		i++;
-	}
-}
-
-int main(void)
-{
-	ft_print_numbers();
-	return (0);
-}
