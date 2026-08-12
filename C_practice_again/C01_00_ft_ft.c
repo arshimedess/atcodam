@@ -1,44 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   C00_05_ft_print_comb.c                             :+:    :+:            */
+/*   C01_00_ft_ft.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ahossein <ahossein@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2026/08/11 23:48:36 by ahossein      #+#    #+#                 */
-/*   Updated: 2026/08/12 14:42:15 by ahossein      ########   odam.nl         */
+/*   Created: 2026/08/12 14:42:58 by ahossein      #+#    #+#                 */
+/*   Updated: 2026/08/12 14:53:34 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-// unfinished//
+#include <stdio.h>
+void ft_ft(int *nbr)
+{
+	*nbr = 42;
+	printf("the adress %p", nbr);
+	printf("the value %d", *nbr);
+}
 
-// #include <unistd.h>
-
-// void ft_print_comb(void)
-// {
-// 	int i;
-// 	int j;
-// 	int k;
+int main(void)
+{
+	int nmbr;
+	nmbr = 2;
+	ft_ft(&nmbr);
+	printf("the value %d", nmbr);
 	
-// 	i = 0;
-// 	while (i <= 7)
-// 	{
-// 		j = 1;
-// 		while (j <= 8)
-// 		{
-// 			k = 2;
-// 			while (k <= 9)
-// 			{
-// 				k++;
-// 			}
-// 			j++;
-// 		}
-// 		i++;
-// 	}
-
-// }
-// int main(void)
-// {
-// 	ft_print_comb();
-// 	return (0);
-// }
+	return(0);
+}
