@@ -8,3 +8,8 @@
 // Your function must be declared as follows:
 
 // char    *ft_strcpy(char *s1, char *s2);
+
+char    *ft_strcpy(char *s1, char *s2)
+{
+	
+}

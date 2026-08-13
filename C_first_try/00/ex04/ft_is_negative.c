@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ahossein <ahossein@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/23 20:52:40 by ahossein          #+#    #+#             */
-/*   Updated: 2026/07/24 18:29:01 by ahossein         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_is_negative.c                                   :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: ahossein <ahossein@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2026/07/23 20:52:40 by ahossein      #+#    #+#                 */
+/*   Updated: 2026/08/11 23:46:51 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ void	ft_is_negative(int n)
 	
 }
 
-// int	main(void)
-// {
-// 	ft_is_negative(23);
-// 	return (0);
-// }
+int	main(void)
+{
+	ft_is_negative(23);
+	return (0);
+}

@@ -30,8 +30,8 @@ void rev_print(char *str)
 		strlen++;
 	}
 	
-	printf("strlen: %d", strlen);
-	while(i < strlen)
+	// printf("strlen: %d", strlen);
+	while(i <= strlen)
 	{
 		write(1, &str[strlen - i], 1);
 		i++;

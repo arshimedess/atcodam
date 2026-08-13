@@ -14,7 +14,7 @@ char *ft_revvstr(char *str)
 	char store;
 	int last_char = strlen - 1;		//index number for the last char
 	int i = 0;
-	while ( i < last_char)
+	while (i < last_char)
 	{
 		store = str[i];
 		str[i] = str[last_char];

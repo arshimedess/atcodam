@@ -6,7 +6,7 @@
 /*   By: ahossein <ahossein@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2026/08/10 21:45:36 by ahossein      #+#    #+#                 */
-/*   Updated: 2026/08/11 18:12:50 by ahossein      ########   odam.nl         */
+/*   Updated: 2026/08/13 18:31:01 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv)
 	while (i != 0)
 	{
 		j = 0;
-		while (argv[i][j] != 0)
+		while (argv[i][j] != '\0')
 		{
 			write(1, &argv[i][j], 1);
 			j++;
