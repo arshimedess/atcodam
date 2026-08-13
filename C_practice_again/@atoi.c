@@ -34,8 +34,6 @@ int ft_atoi(const char *str)
 		i++;
 	}
 	return (sign * nbr);
-
-
 }
 int main(void)
 {
