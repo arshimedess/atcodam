@@ -2,28 +2,41 @@
 
 char *ft_strcapitalize(char *str)
 {
-	//first we mesure the length
-	//then we should do the swapping from the end to the begining
+	int ready_for_new_word;
+	int i;
 
-	int last_char = 0;
-	char store;
-	
-	int strlen = 0;
-	while (str[i] != '\0')
+	ready_for_new_word = 1;
+	i = 0;
+	while(str[i] != '\0')
 	{
-		strlen++;
+		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')
+			|| (str[i] >= '0' && str[i] <= '9')))
+			{
+				ready_for_new_word = 1;
+				i++;
+			}
+		else
+		{
+			if (ready_for_new_word && (str[i] >= 'a' && str[i] <= 'z'))
+			{
+				str[i] -= 32;
+				ready_for_new_word = 0;
+			}
+			else if (ready_for_new_word && (str[i] >= 'A' && str[i] <= 'Z'))
+			{
+				str[i] += 32;
+			}
+		}
+		i++;
 	}
-
-	while ( strlen < last_char - 1)
-	{
-		
-	}
-
+	return(str);
 }
+
 
 int main(void)
 {
-	char string[] = "hi, how are you? 42words forty-two; fifty+and+one";
-	printf("result is: %s", string);
+	char string[] = "hi, how are you? 42Words forty-two; fifty+and+one";
+	ft_strcapitalize(string);
+	printf("%s", string);
 	return(0);
 }

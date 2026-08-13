@@ -16,3 +16,32 @@
 // LIOP a 0bud$
 // $> ./rev_print | cat -e
 // $
+
+#include <unistd.h>
+#include <stdio.h>
+
+void rev_print(char *str)
+{
+	int i = 1;
+	int strlen = 0;
+
+	while (str[strlen] != '\0')
+	{
+		strlen++;
+	}
+	
+	printf("strlen: %d", strlen);
+	while(i < strlen)
+	{
+		write(1, &str[strlen - i], 1);
+		i++;
+	}
+	write (1, "\n", 1);
+}
+
+int main(void)
+{
+	char string[] = "whatever is back";
+	rev_print(string);
+	return (0);
+}

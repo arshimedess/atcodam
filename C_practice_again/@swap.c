@@ -9,3 +9,24 @@
 // Your function must be declared as follows:
 
 // void	ft_swap(int *a, int *b);
+
+#include <stdio.h>
+
+void	ft_swap(int *a, int *b)
+{
+	int store;
+
+	store = *a;
+	*a = *b;
+	*b = store;
+}
+
+int main(void)
+{
+	int a = 10;
+	int b = 20;
+	ft_swap(&a, &b);
+	printf("a value is now %d\n", a);
+	printf("b value is now %d\n", b);
+	return  (0);
+}
