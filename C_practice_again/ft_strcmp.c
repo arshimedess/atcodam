@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   C00_04_ft_is_negative.c                            :+:    :+:            */
+/*   ft_strcmp.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ahossein <ahossein@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2026/08/11 23:41:12 by ahossein      #+#    #+#                 */
-/*   Updated: 2026/08/11 23:44:54 by ahossein      ########   odam.nl         */
+/*   Created: 2026/08/12 17:59:14 by ahossein      #+#    #+#                 */
+/*   Updated: 2026/08/12 18:40:57 by ahossein      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
 
-void ft_is_negative(int n)
+int	ft_strcmp(char *s1, char *s2)
 {
-	if (n < 0)
-		write(1, "N", 1);
-	else
-		write(1, "P",1);	
-}
+	int	i;
 
-int main(void)
-{
-	int number = 0;
-	ft_is_negative(number);
-	return (0);
+	i = 0;
+	while (s1[i] != '\0' && s1[i] == s2[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
